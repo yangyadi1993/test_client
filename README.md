@@ -2,10 +2,10 @@
 The project structure was initialized by `create-react-app`.
 
 ## Technology stack:
-- create-react-app
-- react
-- redux
-- ant design react components
+- `create-react-app`
+- `react`
+- `redux`
+- `ant design` react components
 
 ## API Design
 Design following api and setup a mock server provide data to client application
@@ -30,3 +30,12 @@ Implement **order** part:
 - Show order list after login or click `order` menu
 - Implement pagination
 - Can select multiple orders and set their status or delete them.
+
+## Submit project
+Project should include:
+- mock server
+- application source code
+- testing code
+- manual about how to run application and mock server
+
+Send me your repository address. You can clone this repository or use `create-react-app` to initialize a new one.
