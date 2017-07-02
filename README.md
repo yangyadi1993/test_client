@@ -12,7 +12,7 @@ $ npm install
 
 Start the app:
 ```bash
-$ npm start -s
+$ npm start
 ```
 
 Build the app:
