@@ -101,22 +101,35 @@ class App extends Component {
                     onClick={this.handleClick}
                     selectedKeys={[this.state.current]}
                     mode="horizontal">
-                    <Menu.Item key="home">
-                      <Link to="/">Home</Link>
-                    </Menu.Item>
+
+
+
               { this.state.userToken
 
-          ? <Menu.Item key="logout">
-                <p onClick={this.handleLogout} >Log out</p>
+          ? [<Menu.Item key="home">
+                      <Link to="/">Order</Link>
+                    </Menu.Item>,
+                    <Menu.Item key="inventory">
+                      <Link to="/inventory">Inventory</Link>
+                    </Menu.Item>,
+                    <Menu.Item key="Product">
+                      <Link to="/product">Product</Link>
+                    </Menu.Item>,
+                    <Menu.Item>
+                    </Menu.Item>,
+                  <Menu.Item key="logout">
+                <p onClick={this.handleLogout}>Log out</p>
 
-            </Menu.Item>
+            </Menu.Item>]
           :[ <Menu.Item key="login">
                 <Link to="/login">Log in</Link>
 
              </Menu.Item>,
-              <Menu.Item key="register">
+              <Menu.Item key="register" >
                   <Link to="/register">Register</Link>
               </Menu.Item> ] }
+
+
               </Menu>
         <Routes childProps={childProps} />
 
